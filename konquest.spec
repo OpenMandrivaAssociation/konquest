@@ -1,5 +1,5 @@
 Name:		konquest
-Version:	4.10.0
+Version:	4.10.1
 Release:	1
 Epoch:		1
 Summary:	Conquer the planets of your enemy
@@ -34,6 +34,9 @@ empire and ultimately conquer all other player's planets.
 %makeinstall_std -C build
 
 %changelog
+* Sat Mar 09 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.1-1
+- New version 4.10.1
+
 * Wed Feb 13 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.0-1
 - Split from kdegames4 package
 
