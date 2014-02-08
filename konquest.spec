@@ -1,6 +1,6 @@
 Name:		konquest
 Version:	4.12.1
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Conquer the planets of your enemy
 Group:		Graphical desktop/KDE
