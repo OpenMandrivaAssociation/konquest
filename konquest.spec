@@ -1,6 +1,6 @@
 Name:		konquest
-Version:	15.12.0
-Release:	2
+Version:	15.12.1
+Release:	1
 Epoch:		1
 Summary:	Conquer the planets of your enemy
 Group:		Graphical desktop/KDE
