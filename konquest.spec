@@ -1,5 +1,5 @@
 Name:		konquest
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Summary:	Conquer the planets of your enemy
