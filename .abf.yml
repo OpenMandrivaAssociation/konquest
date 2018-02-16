@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   konquest-17.12.1.tar.xz: c2bae52cb5050fcfecacc79928796264bb3b868a
+sources:
+  konquest-17.12.2.tar.xz: c841305bea2e0ba80d5943d09f2b5aae2c7721ea
