@@ -11,7 +11,7 @@ Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons) cmake(KF5GuiAddons) cmake(KF5I18n) cmake(KF5KDEGames) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5Svg) cmake(Qt5Widgets)
+BuildRequires:	cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons) cmake(KF5GuiAddons) cmake(KF5I18n) cmake(KF5KDEGames) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5Svg) cmake(Qt5Widgets) cmake(KF5DocTools)
 
 %description
 Konquest is the KDE version of Gnu-Lactic Konquest. Players conquer other
