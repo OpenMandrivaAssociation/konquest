@@ -1,14 +1,13 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		konquest
-Version:	20.03.90
-Release:	2
+Version:	20.04.0
+Release:	1
 Epoch:		1
 Summary:	Conquer the planets of your enemy
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/konquest/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		konquest-20.03.90-qt-5.15.patch
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
