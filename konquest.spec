@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		konquest
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 Epoch:		1
 Summary:	Conquer the planets of your enemy
@@ -23,7 +23,6 @@ empire and ultimately conquer all other player's planets.
 %{_datadir}/applications/org.kde.konquest.desktop
 %{_datadir}/konquest
 %{_iconsdir}/hicolor/*/apps/konquest.png
-%{_datadir}/kxmlgui5/konquest/konquestui.rc
 %{_datadir}/metainfo/org.kde.konquest.appdata.xml
 
 #------------------------------------------------------------------------------
