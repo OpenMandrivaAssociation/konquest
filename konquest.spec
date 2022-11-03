@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		konquest
-Version:	22.08.2
-Release:	2
+Version:	22.08.3
+Release:	1
 Epoch:		1
 Summary:	Conquer the planets of your enemy
 Group:		Graphical desktop/KDE
