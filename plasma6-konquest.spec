@@ -1,16 +1,21 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		plasma6-konquest
 Version:	24.01.90
-Release:	2
+Release:	1
 Summary:	Conquer the planets of your enemy
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/konquest/
-Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/konquest-%{version}.tar.xz
+URL:		https://www.kde.org/applications/games/konquest/
+Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/konquest-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6Config) cmake(KF6ConfigWidgets) cmake(KF6CoreAddons) cmake(KF6Crash) cmake(KF6DBusAddons) cmake(KF6GuiAddons) cmake(KF6I18n) cmake(KDEGames6) cmake(KF6WidgetsAddons) cmake(KF6XmlGui) cmake(Qt6Core) cmake(Qt6Gui) cmake(Qt6Svg) cmake(Qt6Widgets) cmake(KF6DocTools)
+BuildRequires:	cmake(Qt6StateMachine)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
+BuildRequires:  qt6-qtbase-theme-gtk3
 
 %description
 Konquest is the KDE version of Gnu-Lactic Konquest. Players conquer other
