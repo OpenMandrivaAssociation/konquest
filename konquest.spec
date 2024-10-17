@@ -6,7 +6,7 @@ Epoch:		1
 Summary:	Conquer the planets of your enemy
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/konquest/
+URL:		https://www.kde.org/applications/games/konquest/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
