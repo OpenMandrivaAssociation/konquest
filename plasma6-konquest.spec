@@ -22,7 +22,6 @@ BuildRequires:	cmake(Qt6StateMachine)
 BuildRequires:  cmake(Qt6Qml)
 BuildRequires:  cmake(Qt6QmlCore)
 BuildRequires:  cmake(Qt6QmlNetwork)
-BuildRequires:  qt6-qtbase-theme-gtk3
 
 %description
 Konquest is the KDE version of Gnu-Lactic Konquest. Players conquer other
