@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		konquest
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Conquer the planets of your enemy
 Group:		Graphical desktop/KDE
@@ -23,6 +23,11 @@ BuildRequires:  cmake(Qt6Qml)
 BuildRequires:  cmake(Qt6QmlCore)
 BuildRequires:  cmake(Qt6QmlNetwork)
 
+%rename plasma6-konquest
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Konquest is the KDE version of Gnu-Lactic Konquest. Players conquer other
 planets by sending ships to them. The goal is to build an interstellar
@@ -34,18 +39,3 @@ empire and ultimately conquer all other player's planets.
 %{_datadir}/konquest
 %{_iconsdir}/hicolor/*/apps/konquest.png
 %{_datadir}/metainfo/org.kde.konquest.appdata.xml
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n konquest-%{?git:%{gitbranchd}}%{!?git:%{version}}
-
-%build
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-%ninja
-
-%install
-%ninja_install -C build
-%find_lang %{name} --all-name --with-html
